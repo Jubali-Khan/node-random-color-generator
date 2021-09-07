@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "cli-color": "^2.0.0",
+    "colorspace": "^1.1.2",
+    "kuler": "^2.0.0",
     "node": "^16.6.1"
   },
   "devDependencies": {
