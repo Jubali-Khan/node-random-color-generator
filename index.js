@@ -20,14 +20,15 @@ const clc = require('cli-color');
 //   }
 // } else {
 //   // random color outcome
-//   // const randomColor = clc.xterm(Math.floor(Math.random() * 4));
-//   // console.log(randomColor('text')); // why does it work here and not throw randomColor is not a function??
 
 // }
-console.log(Math.floor(Math.random() * 4));
+// console.log(Math.floor(Math.random() * 4));
 
 function between(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
 console.log(between(0, 4));
+
+const randomColor = clc.xterm(between(0, 40));
+console.log(randomColor('text')); // why does it work here and not throw randomColor is not a function??
