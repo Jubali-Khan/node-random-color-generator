@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "chalk": "^4.1.2",
     "cli-color": "^2.0.0",
     "colornames": "^1.1.1",
+    "colors-convert": "^1.4.1",
     "colorspace": "^1.1.2",
     "kuler": "^2.0.0",
     "node": "^16.6.1",
