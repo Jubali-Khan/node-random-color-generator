@@ -31,7 +31,7 @@ function colorify(par1, par2) {
 ###############################
 ###############################
 ###############################`;
-        console.log(theHex);
+        // console.log(theHex);
         console.log(chalk.keyword('indianred')(colorText));
         // other color-luminosity combinations
       } else if (basicHues.indexOf(par1) > -1) {
