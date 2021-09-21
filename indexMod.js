@@ -25,8 +25,7 @@ function colorify(hue, lumin) {
         case 'red':
           tempColor = randomReds[between(0, 2)];
           theHex = toHex(tempColor);
-          colorText = `
-###############################
+          colorText = `###############################
 ###############################
 ###############################
 #####                     #####
@@ -37,11 +36,11 @@ function colorify(hue, lumin) {
 ###############################`;
           console.log(chalk.keyword(tempColor)(colorText));
           break;
+
         case 'green':
           tempColor = randomGreens[between(0, 2)];
           theHex = toHex(tempColor);
-          colorText = `
-###############################
+          colorText = `###############################
 ###############################
 ###############################
 #####                     #####
@@ -56,8 +55,7 @@ function colorify(hue, lumin) {
         case 'blue':
           tempColor = randomBlues[between(0, 2)];
           theHex = toHex(tempColor);
-          colorText = `
-###############################
+          colorText = `###############################
 ###############################
 ###############################
 #####                     #####
@@ -72,13 +70,14 @@ function colorify(hue, lumin) {
         default:
           break;
       }
-    } else if (lumin === 'dark') {
+    }
+    // two input outcome
+    else if (lumin === 'dark') {
       switch (hue) {
         case 'red':
           tempColor = randomReds[between(2, 4)];
           theHex = toHex(tempColor);
-          colorText = `
-  ###############################
+          colorText = `###############################
   ###############################
   ###############################
   #####                     #####
@@ -93,8 +92,7 @@ function colorify(hue, lumin) {
         case 'green':
           tempColor = randomGreens[between(2, 4)];
           theHex = toHex(tempColor);
-          colorText = `
-  ###############################
+          colorText = `###############################
   ###############################
   ###############################
   #####                     #####
@@ -109,8 +107,7 @@ function colorify(hue, lumin) {
         case 'blue':
           tempColor = randomBlues[between(2, 4)];
           theHex = toHex(tempColor);
-          colorText = `
-  ###############################
+          colorText = `###############################
   ###############################
   ###############################
   #####                     #####
@@ -126,6 +123,19 @@ function colorify(hue, lumin) {
           break;
       }
     }
+
+    //     tempColor = lumin + hue;
+    //     theHex = toHex(tempColor);
+    //     colorText = `###############################
+    // ###############################
+    // ###############################
+    // #####                     #####
+    // #####      ${theHex}        #####
+    // #####                     #####
+    // ###############################
+    // ###############################
+    // ###############################`;
+    //     console.log(chalk.keyword(tempColor)(colorText));
   }
   // one input outcome:
   else if (hue && !lumin) {
@@ -133,8 +143,8 @@ function colorify(hue, lumin) {
       tempColor = randomReds[between(0, 4)];
       theHex = toHex(tempColor);
       colorText = `###############################
-###############################
-###############################
+      ###############################
+      ###############################
 #####                     #####
 #####      ${theHex}        #####
 #####                     #####
@@ -146,8 +156,8 @@ function colorify(hue, lumin) {
       tempColor = randomGreens[between(0, 4)];
       theHex = toHex(tempColor);
       colorText = `###############################
-###############################
-###############################
+      ###############################
+      ###############################
 #####                     #####
 #####      ${theHex}        #####
 #####                     #####
@@ -158,10 +168,9 @@ function colorify(hue, lumin) {
     } else {
       tempColor = randomBlues[between(0, 4)];
       theHex = toHex(tempColor);
-      colorText = `
-###############################
-###############################
-###############################
+      colorText = `###############################
+      ###############################
+      ###############################
 #####                     #####
 #####      ${theHex}        #####
 #####                     #####
@@ -170,6 +179,14 @@ function colorify(hue, lumin) {
 ###############################`;
       console.log(chalk.keyword(tempColor)(colorText));
     }
+
+    //     theHex = toHex(hue);
+    //     colorText = `###############################
+    // #####                     #####
+    // #####      ${theHex}        #####
+    // #####                     #####
+    // ###############################`;
+    //     console.log(chalk.keyword(hue)(colorText));
   }
 }
 
