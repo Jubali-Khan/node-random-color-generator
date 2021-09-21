@@ -5,7 +5,7 @@ function between(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-const basicHues = ['red', 'green', 'blue'];
+const basicHues = ['red', 'green', 'blue', 'cyan'];
 const basicLuminosities = ['light', 'dark'];
 const randomHue = basicHues[between(0, 3)];
 const randomLuminosity = basicLuminosities[between(0, 2)];
