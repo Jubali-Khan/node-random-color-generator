@@ -4,6 +4,7 @@
     "colornames": "^1.1.1"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.15.4",
     "@next/eslint-plugin-next": "^11.0.0",
     "@types/colornames": "^1.1.2",
     "@types/node": "^16.0.0",
